@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#29B6F6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/back_bl"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="New payment"
+                android:textSize="20pt"
+                android:gravity=""
+                android:textColor="#FFFFFF"/>
+            <ImageView
+                android:src="@drawable/send"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="match_parent"
+                android:text="Amount"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:textColor="#29B6F6"/>
+            <EditText
+                android:layout_marginLeft="15dp"
+                android:text="40000"
+                android:textSize="20pt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.21"
+                android:drawableRight="@drawable/money"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Send to"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1.15"
+                android:layout_height="match_parent"
+                android:textColor="#29B6F6"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Note"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:textColor="#29B6F6"
+                android:layout_weight="0.04" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

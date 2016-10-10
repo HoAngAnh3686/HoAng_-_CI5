@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:background="#29B6F6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/menu"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="Setting"
+                android:textSize="20pt"
+                android:gravity=""
+                android:textColor="#FFFFFF"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/textView3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="switches"
+                    android:gravity=""
+                    android:textSize="15pt"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Flashlight"
+                    android:textSize="10pt"
+                    android:gravity=""
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#000000"/>
+
+                <Switch
+                    android:layout_marginRight="30dp"
+                    android:checked="true"
+                    android:textColor="#29B6F6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:id="@+id/switch1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="WiFi"
+                    android:textSize="10pt"
+                    android:gravity=""
+                    android:layout_marginLeft="25dp"
+                    android:textColor="#000000"/>
+
+                <Switch
+                    android:layout_marginRight="30dp"
+                    android:checked="true"
+                    android:textColor="#29B6F6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:id="@+id/switch2" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Radio Buttons"
+                android:textSize="12pt"
+                android:layout_marginLeft="25dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="25dp">
+                    <RadioButton
+                        android:checked="true"
+                        android:id="@+id/rb_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <RadioButton
+                        android:id="@+id/rd_radio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RadioGroup>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+                    <TextView
+                        android:id="@+id/tv_r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="If this is turned on"
+                        android:gravity=""
+                        android:textSize="10pt"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:layout_below="@+id/tv_r1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="This one must be turned off"
+                        android:layout_marginTop="45dp"
+                        android:textSize="10pt"
+                        android:textColor="#000000"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:text="Volume Slider"
+                android:textSize="12pt"
+                android:layout_marginLeft="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:text="If this is turned on"
+                android:textSize="10pt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/textView" />
+
+            <SeekBar
+                android:progress="50"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/seekBar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
